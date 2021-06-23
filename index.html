@@ -1,13 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Internal stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>The Restaurant Mall</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  </head>
+  <body>
+    <!-- START: Header -->
+    <header class="hero-landing">
+      <div class="container">
+        <!-- START: Navbar -->
+        <nav>
+          <ul class="flex-container">
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./pages/blog.html">Blog</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- END: Navbar -->
+
+        <!-- START: Hero landing -->
+        <div class="flex-container">
+          <div>
+            <h1>
+              <div>The</div>
+              <div class="title-style">Restaurant</div>
+              <div>Mall</div>
+            </h1>
+          </div>
+
+          <div class="landing-image">
+            <img
+              src="./assets/home/home-box-header.png"
+              alt="picture of a restaurant with people dining"
+            />
+          </div>
+        </div>
+        <!-- END: Hero landing -->
+      </div>
+    </header>
+    <!-- END: Header -->
+
+    <main>
+      <!-- START: About section -->
+      <section class="about-section">
+        <div class="container grid-container">
+          <!-- START: Location -->
+          <div class="card">
+            <div class="icon-container">
+              <i class="fas fa-map-marker-alt icon"></i>
+            </div>
+            <div>
+              <h2>Location</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                doloremque. Dolores illum unde accusantium quis enim doloribus
+                tenetur dolorum soluta!
+              </p>
+            </div>
+          </div>
+          <!-- END: Location -->
+
+          <!-- START: Community -->
+          <div class="card">
+            <div class="icon-container">
+              <i class="fas fa-users icon"></i>
+            </div>
+            <div>
+              <h2>Community</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                doloremque. Dolores illum unde accusantium quis enim doloribus
+                tenetur dolorum soluta!
+              </p>
+            </div>
+          </div>
+          <!-- END: Community -->
+
+          <!-- START: Blog -->
+          <div class="card">
+            <div class="icon-container">
+              <i class="fas fa-file icon"></i>
+            </div>
+            <div>
+              <h2>Blog</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                doloremque. Dolores illum unde accusantium quis enim doloribus
+                tenetur dolorum soluta!
+              </p>
+            </div>
+          </div>
+          <!-- END: Blog -->
+
+          <!-- START: Contact -->
+          <div class="card">
+            <div class="icon-container">
+              <i class="fas fa-phone icon"></i>
+            </div>
+            <div>
+              <h2>Get in touch</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                doloremque. Dolores illum unde accusantium quis enim doloribus
+                tenetur dolorum soluta!
+              </p>
+            </div>
+          </div>
+          <!-- END: Contact section -->
+        </div>
+      </section>
+      <!-- END: About section -->
+
+      <!-- START: Features section -->
+      <section class="features-section">
+        <div class="container grid-container">
+          <div class="left-image grid-item">
+            <img
+              src="./assets/home/left-image.jpg"
+              alt="delicious burger with fries"
+            />
+          </div>
+
+          <div class="grid-item">
+            <h5>Best burgers</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+              blanditiis incidunt ipsam impedit necessitatibus ut dolore natus
+              saepe voluptates molestias.
+            </p>
+            <button>Read more</button>
+          </div>
+
+          <div class="grid-item">
+            <h5>Try something new</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+              blanditiis incidunt ipsam impedit necessitatibus ut dolore natus
+              saepe voluptates molestias.
+            </p>
+            <button>Read more</button>
+          </div>
+
+          <div class="right-image grid-item">
+            <img
+              src="./assets/home/right-image.jpg"
+              alt="delicious burger with fries"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- END: Features section -->
+
+      <!-- START: Winning section -->
+      <section class="winning-section">
+        <div class="container">
+          <h3>Win a $100 gift card</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sint
+            aliquid odio veniam similique asperiores sit error veritatis hic
+            temporibus.
+          </p>
+          <button>Find out more</button>
+        </div>
+      </section>
+      <!-- END: Winning section -->
+
+      <!-- START: Location image -->
+      <!-- <div class="wrapper location"></div> -->
+      <!-- END: Location image -->
+
+      <!-- START: Spaces section -->
+      <!-- <div class="wrapper">
+        <div class="container">
+            <section>
+                <div>
+                    <img
+                        src="./assets/home/square-image.jpg"
+                        alt="People dining in an elegant indoor restaurant with plants hanging from the ceiling"
+                    />
+                <div>
+                <div>
+                    <h3>Bringing nature in spaces</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Fugiat ducimus minus libero porro voluptatibus. Corporis quia
+                    adipisci sequi error ratione, fuga culpa dignissimos nesciunt
+                    vitae laboriosam totam voluptatem commodi perferendis in
+                    dolores quae laudantium tempore eveniet eligendi
+                    necessitatibus molestiae repellat, impedit accusantium
+                    pariatur. Dolore necessitatibus provident dicta accusantium
+                    debitis illo?
+                    </p>
+                    <button>Find out more</button>
+                </div>
+          </section>
+        </div>
+      </div> -->
+      <!-- END: Spaces section -->
+
+      <!-- START: Gallery section -->
+      <!-- <div class="wrapper">
+            <section>
+                <div class="container">
+                    <div><img src="./assets/home/gallery-image-1.jpg" alt="Picture of light bulbs hanging from a pipe"></div>
+                    <div><img src="./assets/home/gallery-image-2.jpg" alt="Retro take away sign light up"></div>
+                    <div><img src="/assets/home/gallery-image-3.jpg" alt="Birds eye view of a table with food"></div>
+                </div>
+            </section>
+      </div> -->
+      <!-- END: Gallery section -->
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2021 Juno College</p>
+    </footer>
+  </body>
 </html>

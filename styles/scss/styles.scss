@@ -1,2 +1,9 @@
-@import "./base/setup.scss";
-
+@import "./base/setup.scss"; // setup snippet
+@import "./base/variables"; // variables
+@import "./base/mixins"; // functions
+@import "./base/general"; // general styles
+@import "./partials/nav"; // nav styles
+@import "./partials/header"; // header styles
+@import "./partials/about"; // about styles
+@import "./partials/features"; // features styles
+@import "./partials/winnings"; // winnings styles

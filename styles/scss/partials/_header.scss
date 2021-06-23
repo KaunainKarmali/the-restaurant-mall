@@ -1,0 +1,17 @@
+h1 > span {
+  display: table;
+  background-color: $white;
+  color: $pine;
+}
+
+h1 .title-style {
+  display: inline-block;
+  background: $white;
+  color: $pine;
+}
+
+.landing-image {
+  position: relative;
+  right: -5.5%;
+  bottom: -15%;
+}

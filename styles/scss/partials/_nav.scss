@@ -1,0 +1,15 @@
+nav {
+  margin: 0px;
+  padding: $extraLarge 0px;
+}
+
+.active::after {
+  content: "";
+  background-color: $yellow;
+  display: inline-block;
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  bottom: -2px;
+  right: 20%;
+}

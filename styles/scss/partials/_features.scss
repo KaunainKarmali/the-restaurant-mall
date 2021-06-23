@@ -1,0 +1,53 @@
+// ***********************
+// Features section styles
+// ***********************
+.features-section {
+  background-color: $blackAlt;
+  color: $white;
+}
+
+.features-section > .container {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.features-section > .grid-container {
+  column-gap: 20%;
+  row-gap: $standard;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.features-section .grid-item {
+  //   justify-self: center;
+  align-self: center;
+}
+
+.features-section .grid-item:nth-child(3) {
+  text-align: right;
+}
+
+.left-image {
+  position: relative;
+  top: -15px;
+}
+
+.left-image img {
+  box-shadow: 15px 15px 0px 0px $yellow;
+  -webkit-box-shadow: 15px 15px 0px 0px $yellow;
+  -moz-box-shadow: 15px 15px 0px 0px $yellow;
+}
+
+.right-image {
+  position: relative;
+  top: 30px;
+}
+
+.right-image img {
+  box-shadow: -15px 15px 0px 0px $yellow;
+  -webkit-box-shadow: -15px 15px 0px 0px $yellow;
+  -moz-box-shadow: -15px 15px 0px 0px $yellow;
+}
+
+.features-section p {
+  width: 80%;
+}
