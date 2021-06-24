@@ -418,7 +418,7 @@ header .grid-container {
 }
 
 .about-section {
-  padding: 160px 0px 80px;
+  padding: 0px;
   background-color: #2b291b;
   color: white;
 }
@@ -485,11 +485,6 @@ header .grid-container {
 .features-section {
   background-color: #171b0e;
   color: white;
-}
-
-.features-section > .container {
-  max-width: 1400px;
-  width: 100%;
 }
 
 .features-section > .grid-container {
