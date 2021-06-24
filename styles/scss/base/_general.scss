@@ -25,6 +25,7 @@ h3,
 h4 {
   font-size: 2.8rem;
   line-height: 99.8px;
+  font-weight: 400;
 }
 
 h2,
@@ -35,18 +36,21 @@ h5 {
 
 h3 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 h5 {
   font-size: 2.5rem;
   line-height: 58px;
   letter-spacing: 1.3px;
+  font-weight: 400;
 }
 
 h6 {
   font-size: 2.5rem;
   line-height: 58px;
   letter-spacing: 0.8px;
+  font-weight: 400;
 }
 
 nav {
@@ -58,9 +62,37 @@ nav {
 }
 
 button {
-  font-size: 2.24rem;
+  font-size: 1.4rem;
   line-height: 41.6px;
   text-align: center;
+  color: $pine;
+  background-color: $yellow;
+  border: 2px solid $yellow;
+  border-radius: 2px;
+  padding: 0px $small;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $yellow;
+    background-color: $pine;
+    border: 2px solid $yellow;
+  }
+}
+
+.alt-button {
+  color: $white;
+  background-color: $black;
+  border: 2px solid $black;
+  padding: 0px $standard;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    background-color: $white;
+    border: 2px solid $black;
+  }
 }
 
 p {
@@ -68,7 +100,7 @@ p {
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0px 0px $large 0px;
 }
 
 img {
@@ -114,5 +146,11 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto 50px repeat(8, minmax(auto, 150px)) 50px auto;
+  grid-template-columns: auto 50px repeat(8, minmax(auto, 175px)) 50px auto;
+}
+
+.left-bottom-shadow {
+  box-shadow: -15px 15px 0px 0px $yellow;
+  -webkit-box-shadow: -15px 15px 0px 0px $yellow;
+  -moz-box-shadow: -15px 15px 0px 0px $yellow;
 }

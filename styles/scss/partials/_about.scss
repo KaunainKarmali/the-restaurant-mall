@@ -2,14 +2,19 @@
 // About section styles
 // ***********************
 .about-section {
-  padding: 0px;
+  padding: 100px 0px;
   background-color: $pine;
   color: $white;
 }
 
 .about-section .grid-container {
-  // grid-template-columns: auto 50px repeat(8, minmax(auto, 150px)) 50px auto;
   grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 
 .card1 {
@@ -30,17 +35,6 @@
 .card4 {
   grid-column: 7 / span 4;
   grid-row: 2/3;
-}
-
-// .about-section > .grid-container {
-//   column-gap: $small;
-//   row-gap: $standard;
-// }
-
-.card {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
 }
 
 .icon-container {
