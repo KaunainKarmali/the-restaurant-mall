@@ -1,7 +1,5 @@
-h1 > span {
-  display: table;
-  background-color: $white;
-  color: $pine;
+header {
+  background-color: rgba(43, 41, 27, 1);
 }
 
 h1 .title-style {
@@ -10,8 +8,22 @@ h1 .title-style {
   color: $pine;
 }
 
-.landing-image {
-  position: relative;
-  right: -5.5%;
-  bottom: -15%;
+.header-image {
+  @include backgroundImg("../assets/home/home-header.jpg", auto);
+  grid-column: 1/13;
+  grid-row: 1/12;
+}
+
+header .grid-container {
+  grid-template-rows: repeat(14, minmax(10px, 50px));
+}
+
+.header-image-alt {
+  grid-column: 7/12;
+  grid-row: 4/ 13;
+}
+
+.h1-container {
+  grid-column-start: 3;
+  grid-row-start: 3;
 }

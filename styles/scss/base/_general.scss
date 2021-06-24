@@ -80,6 +80,10 @@ img {
 
 li {
   list-style-type: none;
+
+  &:focus-within {
+    color: $yellow;
+  }
 }
 
 a {
@@ -89,8 +93,10 @@ a {
   color: $white;
   padding: 0px $standard;
   font-size: 1.2rem;
+  cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $yellow;
   }
 }
@@ -101,10 +107,6 @@ a {
   margin: 0 auto;
 }
 
-.hero-landing {
-  @include backgroundImg("../assets/home/home-header.jpg");
-}
-
 .flex-container {
   display: flex;
   align-items: flex-start;
@@ -112,5 +114,5 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 50px repeat(8, minmax(auto, 150px)) 50px auto;
 }

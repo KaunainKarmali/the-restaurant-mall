@@ -19,37 +19,29 @@
   </head>
   <body>
     <!-- START: Header -->
-    <header class="hero-landing">
-      <div class="container">
-        <!-- START: Navbar -->
-        <nav>
-          <ul class="flex-container">
-            <li><a class="active" href="./index.html">Home</a></li>
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <li><a href="./pages/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- END: Navbar -->
-
-        <!-- START: Hero landing -->
-        <div class="flex-container">
-          <div>
-            <h1>
-              <div>The</div>
-              <div class="title-style">Restaurant</div>
-              <div>Mall</div>
-            </h1>
-          </div>
-
-          <div class="landing-image">
-            <img
-              src="./assets/home/home-box-header.png"
-              alt="picture of a restaurant with people dining"
-            />
-          </div>
+    <header>
+      <div class="grid-container">
+        <div class="header-image"></div>
+        <div class="nav-container">
+          <nav>
+            <ul class="flex-container">
+              <li><a class="active">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <!-- END: Hero landing -->
+        <div class="h1-container">
+          <h1>
+            <div>The</div>
+            <div class="title-style">Restaurant</div>
+            <div>Mall</div>
+          </h1>
+        </div>
+        <div class="header-image-alt">
+          <img src="./assets/home/home-box-header.png" alt="" />
+        </div>
       </div>
     </header>
     <!-- END: Header -->
@@ -57,9 +49,9 @@
     <main>
       <!-- START: About section -->
       <section class="about-section">
-        <div class="container grid-container">
+        <div class="grid-container">
           <!-- START: Location -->
-          <div class="card">
+          <div class="card card1">
             <div class="icon-container">
               <i class="fas fa-map-marker-alt icon"></i>
             </div>
@@ -75,7 +67,7 @@
           <!-- END: Location -->
 
           <!-- START: Community -->
-          <div class="card">
+          <div class="card card2">
             <div class="icon-container">
               <i class="fas fa-users icon"></i>
             </div>
@@ -91,7 +83,7 @@
           <!-- END: Community -->
 
           <!-- START: Blog -->
-          <div class="card">
+          <div class="card card3">
             <div class="icon-container">
               <i class="fas fa-file icon"></i>
             </div>
@@ -107,7 +99,7 @@
           <!-- END: Blog -->
 
           <!-- START: Contact -->
-          <div class="card">
+          <div class="card card4">
             <div class="icon-container">
               <i class="fas fa-phone icon"></i>
             </div>

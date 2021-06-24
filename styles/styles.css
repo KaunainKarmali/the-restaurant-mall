@@ -321,6 +321,9 @@ img {
 li {
   list-style-type: none;
 }
+li:focus-within {
+  color: #ffd300;
+}
 
 a {
   display: inline-block;
@@ -329,8 +332,9 @@ a {
   color: white;
   padding: 0px 20px;
   font-size: 1.2rem;
+  cursor: pointer;
 }
-a:hover {
+a:hover, a:focus {
   color: #ffd300;
 }
 
@@ -338,14 +342,6 @@ a:hover {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-}
-
-.hero-landing {
-  background-image: url("../assets/home/home-header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
 }
 
 .flex-container {
@@ -359,12 +355,21 @@ a:hover {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 50px repeat(8, minmax(auto, 150px)) 50px auto;
 }
 
 nav {
   margin: 0px;
-  padding: 50px 0px;
+}
+
+.nav-container {
+  grid-column: 3/11;
+  grid-row: 2/3;
+}
+
+.nav-container a {
+  padding: 10px 20px 10px 0;
+  margin-right: 20px;
 }
 
 .active::after {
@@ -374,14 +379,12 @@ nav {
   position: absolute;
   width: 60%;
   height: 2px;
-  bottom: -2px;
-  right: 20%;
+  bottom: 10px;
+  right: 35%;
 }
 
-h1 > span {
-  display: table;
-  background-color: white;
-  color: #2b291b;
+header {
+  background-color: #2b291b;
 }
 
 h1 .title-style {
@@ -390,10 +393,28 @@ h1 .title-style {
   color: #2b291b;
 }
 
-.landing-image {
-  position: relative;
-  right: -5.5%;
-  bottom: -15%;
+.header-image {
+  background-image: url("../assets/home/home-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  grid-column: 1/13;
+  grid-row: 1/12;
+}
+
+header .grid-container {
+  grid-template-rows: repeat(14, minmax(10px, 50px));
+}
+
+.header-image-alt {
+  grid-column: 7/12;
+  grid-row: 4/13;
+}
+
+.h1-container {
+  grid-column-start: 3;
+  grid-row-start: 3;
 }
 
 .about-section {
@@ -402,11 +423,28 @@ h1 .title-style {
   color: white;
 }
 
-.about-section > .grid-container {
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 20px;
+.about-section .grid-container {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card1 {
+  grid-column: 3/span 4;
+  grid-row: 1/2;
+}
+
+.card2 {
+  grid-column: 7/span 4;
+  grid-row: 1/2;
+}
+
+.card3 {
+  grid-column: 3/span 4;
+  grid-row: 2/3;
+}
+
+.card4 {
+  grid-column: 7/span 4;
+  grid-row: 2/3;
 }
 
 .card {
