@@ -272,6 +272,10 @@ h5 {
   margin: 0;
 }
 
+h2 {
+  color: white;
+}
+
 h3 {
   text-align: center;
   text-transform: uppercase;
@@ -285,10 +289,13 @@ h5 {
 }
 
 h6 {
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #ffd300;
+  font-size: 1.3rem;
   line-height: 58px;
   letter-spacing: 0.8px;
   font-weight: 400;
+  margin: 0;
 }
 
 nav {
@@ -303,7 +310,7 @@ button {
   font-size: 1.4rem;
   line-height: 41.6px;
   text-align: center;
-  color: #2b291b;
+  color: #2b331b;
   background-color: #ffd300;
   border: 2px solid #ffd300;
   border-radius: 2px;
@@ -313,7 +320,7 @@ button {
 button:hover, button:focus {
   cursor: pointer;
   color: #ffd300;
-  background-color: #2b291b;
+  background-color: #2b331b;
   border: 2px solid #ffd300;
 }
 
@@ -392,6 +399,20 @@ a:hover, a:focus {
   -moz-box-shadow: -15px 15px 0px 0px #ffd300;
 }
 
+.grid-container-alt {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
+  grid-template-rows: 75px minmax(auto, 700px) 75px;
+}
+
+.grid-sub-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 100px repeat(10, 1fr) 100px;
+  grid-template-rows: repeat(12, minmax(auto, 1fr));
+}
+
 nav {
   margin: 0px;
 }
@@ -424,7 +445,7 @@ header {
 h1 .title-style {
   display: inline-block;
   background: white;
-  color: #2b291b;
+  color: #2b331b;
 }
 
 .header-image {
@@ -451,9 +472,39 @@ header .grid-container {
   grid-row-start: 3;
 }
 
+.blog-header-image {
+  background-image: url("../assets/blog/blog-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.blog-header .nav-container {
+  grid-column: 2/-2;
+  grid-row: 1/span 2;
+}
+
+.blog-title-container {
+  grid-column: 2/4;
+  grid-row: 3/span 2;
+}
+
+footer {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
 .about-section {
   padding: 100px 0px;
-  background-color: #2b291b;
+  background-color: #2b331b;
   color: white;
 }
 
@@ -564,7 +615,7 @@ header .grid-container {
 .winning-section {
   padding: 50px 0px;
   text-align: center;
-  background-color: #2b291b;
+  background-color: #2b331b;
 }
 
 .winning-section h3 {
@@ -588,7 +639,7 @@ header .grid-container {
 
 .spaces-section {
   padding: 100px 0px;
-  background-color: #2b291b;
+  background-color: #2b331b;
   color: white;
 }
 
@@ -621,14 +672,52 @@ header .grid-container {
           column-gap: 30px;
 }
 
-footer {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  background-color: #0f0f0f;
-  color: white;
+.blog-wrapper {
+  background-color: #2b331b;
 }
 
-footer p {
-  margin: 0;
+.blog-layout {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "aside main";
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.blog-layout .aside-container {
+  grid-area: aside;
+  display: grid;
+  grid-template-columns: 100px repeat(10, 1fr) 30px;
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.aside-container .side-image {
+  grid-column: 1/-2;
+  grid-row: 1/8;
+  position: relative;
+  z-index: 10;
+}
+
+.aside-container .side-content {
+  padding: 350px 10px 10px 10px;
+  background-color: #171b0e;
+  color: white;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+}
+
+.aside-container .side-content li {
+  list-style-type: circle;
+  margin-left: 15px;
+  font-size: 1.25rem;
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-family: "Barlow", sans-serif;
+}
+
+.blog-layout main {
+  grid-area: main;
 }

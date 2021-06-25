@@ -34,6 +34,10 @@ h5 {
   margin: 0;
 }
 
+h2 {
+  color: $white;
+}
+
 h3 {
   text-align: center;
   text-transform: uppercase;
@@ -47,10 +51,13 @@ h5 {
 }
 
 h6 {
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: $yellow;
+  font-size: 1.3rem;
   line-height: 58px;
   letter-spacing: 0.8px;
   font-weight: 400;
+  margin: 0;
 }
 
 nav {
@@ -153,4 +160,19 @@ a {
   box-shadow: -15px 15px 0px 0px $yellow;
   -webkit-box-shadow: -15px 15px 0px 0px $yellow;
   -moz-box-shadow: -15px 15px 0px 0px $yellow;
+}
+
+.grid-container-alt {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
+  grid-template-rows: 75px minmax(auto, 700px) 75px;
+}
+
+.grid-sub-container {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 100px repeat(10, 1fr) 100px;
+  grid-template-rows: repeat(12, minmax(auto, 1fr));
 }
