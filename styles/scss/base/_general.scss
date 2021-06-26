@@ -43,6 +43,11 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  color: $yellow;
+  text-transform: uppercase;
+}
+
 h5 {
   font-size: 2.5rem;
   line-height: 58px;
@@ -165,7 +170,7 @@ a {
 .grid-container-alt {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
-  grid-template-rows: 75px minmax(auto, 700px) 75px;
+  grid-template-rows: 75px auto 75px;
 }
 
 .grid-sub-container {
