@@ -25,6 +25,7 @@ h3,
 h4 {
   font-size: 2.8rem;
   line-height: 99.8px;
+  font-weight: 400;
 }
 
 h2,
@@ -33,20 +34,36 @@ h5 {
   margin: 0;
 }
 
+h2 {
+  color: $white;
+}
+
 h3 {
   text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: $yellow;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 h5 {
   font-size: 2.5rem;
   line-height: 58px;
   letter-spacing: 1.3px;
+  font-weight: 400;
 }
 
 h6 {
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: $yellow;
+  font-size: 1.1rem;
   line-height: 58px;
   letter-spacing: 0.8px;
+  font-weight: 400;
+  margin: 0;
 }
 
 nav {
@@ -58,17 +75,46 @@ nav {
 }
 
 button {
-  font-size: 2.24rem;
+  font-size: 1.4rem;
   line-height: 41.6px;
   text-align: center;
+  color: $pine;
+  background-color: $yellow;
+  border: 2px solid $yellow;
+  border-radius: 2px;
+  padding: 0px $small;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $yellow;
+    background-color: $pine;
+    border: 2px solid $yellow;
+  }
 }
 
-p {
+.alt-button {
+  color: $white;
+  background-color: $black;
+  border: 2px solid $black;
+  padding: 0px $standard;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    background-color: $white;
+    border: 2px solid $black;
+  }
+}
+
+p,
+*::placeholder {
   font-family: $fontAlternative;
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0px 0px $large 0px;
 }
 
 img {
@@ -80,6 +126,10 @@ img {
 
 li {
   list-style-type: none;
+
+  &:focus-within {
+    color: $yellow;
+  }
 }
 
 a {
@@ -89,8 +139,10 @@ a {
   color: $white;
   padding: 0px $standard;
   font-size: 1.2rem;
+  cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $yellow;
   }
 }
@@ -101,10 +153,6 @@ a {
   margin: 0 auto;
 }
 
-.hero-landing {
-  @include backgroundImg("../assets/home/home-header.jpg");
-}
-
 .flex-container {
   display: flex;
   align-items: flex-start;
@@ -112,5 +160,32 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 50px repeat(8, minmax(auto, 175px)) 50px auto;
+}
+
+.left-bottom-shadow {
+  box-shadow: -15px 15px 0px 0px $yellow;
+  -webkit-box-shadow: -15px 15px 0px 0px $yellow;
+  -moz-box-shadow: -15px 15px 0px 0px $yellow;
+}
+
+.right-bottom-shadow {
+  box-shadow: 15px 15px 0px 0px $yellow;
+  -webkit-box-shadow: 15px 15px 0px 0px $yellow;
+  -moz-box-shadow: 15px 15px 0px 0px $yellow;
+}
+
+.grid-container-alt {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
+  grid-template-rows: 75px auto 75px;
+}
+
+.grid-sub-container {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 100px repeat(10, 1fr) 100px;
+  grid-template-rows: repeat(12, minmax(auto, 1fr));
 }

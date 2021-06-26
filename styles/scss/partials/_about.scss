@@ -2,20 +2,39 @@
 // About section styles
 // ***********************
 .about-section {
-  padding: 160px 0px 80px;
+  padding: 100px 0px;
   background-color: $pine;
   color: $white;
 }
 
-.about-section > .grid-container {
-  column-gap: $small;
-  row-gap: $standard;
+.about-section .grid-container {
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .card {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
+}
+
+.card1 {
+  grid-column: 3 / span 4;
+  grid-row: 1/2;
+}
+
+.card2 {
+  grid-column: 7 / span 4;
+  grid-row: 1/2;
+}
+
+.card3 {
+  grid-column: 3 / span 4;
+  grid-row: 2/3;
+}
+
+.card4 {
+  grid-column: 7 / span 4;
+  grid-row: 2/3;
 }
 
 .icon-container {

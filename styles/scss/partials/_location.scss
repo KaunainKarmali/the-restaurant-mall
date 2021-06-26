@@ -1,0 +1,11 @@
+// ***********************
+// Location section styles
+// ***********************
+.location-section {
+  @include backgroundImg("../assets/home/banner.jpg", auto);
+  min-height: 600px;
+}
+
+// .location-section img {
+//   object-fit: cover;
+// }

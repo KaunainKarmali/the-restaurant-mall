@@ -1,9 +1,23 @@
+// Base
 @import "./base/setup.scss"; // setup snippet
 @import "./base/variables"; // variables
 @import "./base/mixins"; // functions
 @import "./base/general"; // general styles
+
+// General
+@import "./partials/multi-page"; // multiple pages styles
 @import "./partials/nav"; // nav styles
 @import "./partials/header"; // header styles
+@import "./partials/footer"; // footer styles
+
+// Home page styles
 @import "./partials/about"; // about styles
 @import "./partials/features"; // features styles
 @import "./partials/winnings"; // winnings styles
+@import "./partials/location"; // location styles
+@import "./partials/spaces"; // spaces styles
+@import "./partials/gallery"; // gallery styles
+
+// Blog page styles
+@import "./partials/blog"; // blog page styles
+@import "./partials/contact"; // blog page styles
