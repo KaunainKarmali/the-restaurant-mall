@@ -3,6 +3,15 @@
 // ***********************
 
 // ***********************
+// Multi page styles
+// ***********************
+
+.title-container {
+  grid-column: 2 / 4;
+  grid-row: 3 / span 2;
+}
+
+// ***********************
 // Home page styles
 // ***********************
 
@@ -16,7 +25,7 @@ h1 .title-style {
   color: $pine;
 }
 
-.header-image {
+.home-header-image {
   @include backgroundImg("../assets/home/home-header.jpg", auto);
   grid-column: 1/13;
   grid-row: 1/12;
@@ -44,12 +53,10 @@ header .grid-container {
   @include backgroundImg("../assets/blog/blog-header.jpg", auto);
 }
 
-.blog-header .nav-container {
-  grid-column: 2 / -2;
-  grid-row: 1 / span 2;
-}
+// ***********************
+// Contact page styles
+// ***********************
 
-.blog-title-container {
-  grid-column: 2 / 4;
-  grid-row: 3 / span 2;
+.contact-header-image {
+  @include backgroundImg("../assets/contact/contact-header.jpg", auto);
 }

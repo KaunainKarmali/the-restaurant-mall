@@ -5,6 +5,7 @@
 @import "./base/general"; // general styles
 
 // General
+@import "./partials/multi-page"; // multiple pages styles
 @import "./partials/nav"; // nav styles
 @import "./partials/header"; // header styles
 @import "./partials/footer"; // footer styles
@@ -19,3 +20,4 @@
 
 // Blog page styles
 @import "./partials/blog"; // blog page styles
+@import "./partials/contact"; // blog page styles

@@ -108,7 +108,8 @@ button {
   }
 }
 
-p {
+p,
+*::placeholder {
   font-family: $fontAlternative;
   font-size: 1.25rem;
   line-height: 28px;
@@ -166,6 +167,12 @@ a {
   box-shadow: -15px 15px 0px 0px $yellow;
   -webkit-box-shadow: -15px 15px 0px 0px $yellow;
   -moz-box-shadow: -15px 15px 0px 0px $yellow;
+}
+
+.right-bottom-shadow {
+  box-shadow: 15px 15px 0px 0px $yellow;
+  -webkit-box-shadow: 15px 15px 0px 0px $yellow;
+  -moz-box-shadow: 15px 15px 0px 0px $yellow;
 }
 
 .grid-container-alt {

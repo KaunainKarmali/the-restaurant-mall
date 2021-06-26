@@ -7,8 +7,8 @@ nav {
 }
 
 .nav-container {
-  grid-column: 3/11;
-  grid-row: 2/3;
+  grid-column: 2/12;
+  grid-row: 1 / span 1;
 }
 
 .nav-container a {

@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- START: Header -->
-    <header class="blog-header">
+    <header>
       <div class="grid-container-alt blog-header-image">
         <div class="grid-sub-container">
           <div class="nav-container">
@@ -28,12 +28,12 @@
               <ul class="flex-container">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../index.html#about">About</a></li>
-                <li><a class="active" href="./pages/blog.html">Blog</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a class="active" href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
               </ul>
             </nav>
           </div>
-          <div class="blog-title-container">
+          <div class="title-container">
             <h2>Blog</h2>
           </div>
         </div>
@@ -42,7 +42,7 @@
     <!-- END: Header -->
 
     <!-- START: Outter grid -->
-    <div class="grid-container-alt blog-wrapper">
+    <div class="grid-container-alt pine-bg">
       <!-- START: Inner grid -->
       <div class="blog-layout">
         <!-- START: Aside -->
@@ -80,7 +80,7 @@
         <!-- END: Aside -->
 
         <!-- START: Main -->
-        <main>
+        <main class="blog-main">
           <!-- START: Employment ops section -->
           <section class="employment-opps">
             <!-- START: Inner grid container -->
@@ -136,7 +136,7 @@
           <!-- END: Employment ops section -->
 
           <!-- START: Comments section -->
-          <section class="comments-serction">
+          <section class="comments-section">
             <!-- START: Comments container -->
             <div class="comments-container">
               <h5>Comments:</h5>
@@ -150,16 +150,15 @@
                       src="../assets/blog/comment-1.jpg"
                       alt="Picture of girl providing her comments on the restaurant"
                     />
-                    <div class="content">
-                      <p class="sub-title">Tuesday October 9th, 2021 by Ali</p>
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Facilis aut veniam doloribus voluptatum laborum.
-                        Architecto, magni facere. Delectus, vel quasi? Atque
-                        placeat at quos? Mollitia quo cumque ratione aperiam
-                        quos.
-                      </p>
-                    </div>
+                  </div>
+                  <div class="content">
+                    <p class="sub-title">Tuesday October 9th, 2021 by Ali</p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Facilis aut veniam doloribus voluptatum laborum.
+                      Architecto, magni facere. Delectus, vel quasi? Atque
+                      placeat at quos? Mollitia quo cumque ratione aperiam quos.
+                    </p>
                   </div>
                 </div>
                 <!-- END: Comments one -->
@@ -171,17 +170,17 @@
                       src="../assets/blog/comment-2.jpg"
                       alt="Picture of a girl providing her comments on the restaurant"
                     />
-                    <div class="content">
-                      <p class="sub-title">
-                        Wednesday October 10th, 2021 by Lisa
-                      </p>
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Magnam quod, ex odio sapiente quos non assumenda
-                        culpa totam modi doloremque quibusdam provident alias in
-                        consequatur.
-                      </p>
-                    </div>
+                  </div>
+                  <div class="content">
+                    <p class="sub-title">
+                      Wednesday October 10th, 2021 by Lisa
+                    </p>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam quod, ex odio sapiente quos non assumenda culpa
+                      totam modi doloremque quibusdam provident alias in
+                      consequatur.
+                    </p>
                   </div>
                 </div>
                 <!-- END: Comments two -->
@@ -191,6 +190,68 @@
             <!-- END: Comments container -->
           </section>
           <!-- END: Comments section -->
+
+          <!-- START: Contact form section -->
+          <section class="contact-form-section">
+            <!-- START: Contact form container -->
+            <div class="contact-form-container">
+              <!-- START: Contact form -->
+              <form action="#">
+                <!-- START: Contact form inner container -->
+                <div class="form-container">
+                  <!-- START: Name input container -->
+                  <div class="input-container">
+                    <label for="name" class="name-label sr-only">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name"
+                      class="name-input input-areas"
+                    />
+                  </div>
+                  <!-- END: Name input container -->
+
+                  <!-- START: Email input container -->
+                  <div class="input-container">
+                    <label for="email" class="email-label sr-only">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email address"
+                      class="email-input input-areas"
+                    />
+                  </div>
+                  <!-- END: Email input container -->
+
+                  <!-- START: Comment input container -->
+                  <div class="comment-input-container">
+                    <label for="comment" class="comment-label sr-only"
+                      >Comment</label
+                    >
+                    <textarea
+                      name="comment"
+                      id="comment"
+                      cols="30"
+                      rows="10"
+                      placeholder="Comment"
+                      class="comment-input input-areas input-textarea"
+                    ></textarea>
+                  </div>
+                  <!-- END: Comment input container -->
+
+                  <!-- START: Submit btn -->
+                  <button type="submit" class="submit-btn">Post Comment</button>
+                  <!-- END: Submit btn -->
+                </div>
+                <!-- END: Contact form inner container -->
+              </form>
+              <!-- END: Contact form -->
+            </div>
+            <!-- END: Contact form container -->
+          </section>
+          <!-- END: Contact form section -->
         </main>
         <!-- END: Main -->
       </div>
