@@ -284,6 +284,7 @@ h3 {
 h4 {
   color: #ffd300;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 h5 {
@@ -296,7 +297,7 @@ h5 {
 h6 {
   text-transform: uppercase;
   color: #ffd300;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 58px;
   letter-spacing: 0.8px;
   font-weight: 400;
@@ -735,6 +736,7 @@ footer p {
   display: grid;
   grid-template-columns: repeat(5, 1fr) 100px;
   grid-template-rows: auto auto;
+  border-bottom: 2px solid #ffd300;
 }
 
 .blog-layout .main-image {
@@ -757,7 +759,7 @@ footer p {
   grid-template-rows: repeat(6, auto);
   row-gap: 20px;
   border-left: 2px solid #ffd300;
-  border-bottom: 2px solid #ffd300;
+  padding: 0px 0px 75px 75px;
 }
 
 .blog-layout .main-content h4 {

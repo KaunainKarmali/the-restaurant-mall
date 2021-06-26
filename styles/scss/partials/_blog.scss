@@ -53,7 +53,11 @@
   font-family: $fontAlternative;
 }
 
+// -----------------
 // Main styles
+// -----------------
+
+// Employment opportunities styles
 
 .blog-layout main {
   grid-area: main;
@@ -63,6 +67,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr) 100px;
   grid-template-rows: auto auto;
+  border-bottom: 2px solid $yellow;
 }
 
 .blog-layout .main-image {
@@ -85,7 +90,7 @@
   grid-template-rows: repeat(6, auto);
   row-gap: 20px;
   border-left: 2px solid $yellow;
-  border-bottom: 2px solid $yellow;
+  padding: 0px 0px 75px 75px;
 }
 
 .blog-layout .main-content h4 {
@@ -100,3 +105,5 @@
 .sub-title {
   font-weight: 700;
 }
+
+// Comments styles
