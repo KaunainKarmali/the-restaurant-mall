@@ -11,9 +11,15 @@ nav {
   grid-row: 1 / span 1;
 }
 
-.nav-container a {
-  padding: 10px 20px 10px 0;
-  margin-right: 20px;
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  column-gap: 10px;
+}
+
+.nav-link a {
+  padding: 10px 20px 10px 0px;
 }
 
 .active::after {
@@ -21,8 +27,8 @@ nav {
   background-color: $yellow;
   display: inline-block;
   position: absolute;
-  width: 60%;
+  width: calc(100% - 20px);
   height: 2px;
   bottom: 10px;
-  right: 35%;
+  right: 20px;
 }

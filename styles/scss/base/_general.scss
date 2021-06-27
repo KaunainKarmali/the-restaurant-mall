@@ -149,8 +149,8 @@ a {
 
 .container {
   max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 50px 0;
 }
 
 .flex-container {
@@ -181,11 +181,8 @@ a {
   grid-template-rows: 75px auto 75px;
 }
 
-.grid-sub-container {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-
+.grid {
   display: grid;
-  grid-template-columns: 100px repeat(10, 1fr) 100px;
-  grid-template-rows: repeat(12, minmax(auto, 1fr));
+  grid-template-columns: 5% repeat(10, 1fr) 5%;
+  grid-template-rows: repeat(12, 1fr);
 }
