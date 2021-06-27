@@ -14,6 +14,7 @@
 // -----------------------
 // Home page styles
 // -----------------------
+
 .home-header-image {
   @include backgroundImg("../assets/home/home-header.jpg", auto);
 }
@@ -26,12 +27,9 @@ h1 .title-style {
 
 .home-image-alt {
   grid-column: 7/-1;
-  grid-row: 6/-1;
+  grid-row: 1/-1;
   position: relative;
-}
-
-.home-image-alt img {
-  position: absolute;
+  top: 180px;
 }
 
 // -----------------------

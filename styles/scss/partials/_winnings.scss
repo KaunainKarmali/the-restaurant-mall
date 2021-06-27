@@ -1,18 +1,20 @@
 // ***********************
 // Winnings section styles
 // ***********************
+
 .winning-section {
-  padding: $extraLarge 0px;
   text-align: center;
   background-color: $pine;
-}
 
-.winning-section h3 {
-  color: $yellow;
-}
+  h3 {
+    margin: 50px 0px 20px;
+    color: $yellow;
+  }
 
-.winning-section p {
-  padding: $extraLarge;
-  text-align: left;
-  color: $white;
+  p {
+    width: 70%;
+    margin: 0px auto 20px;
+    text-align: left;
+    color: $white;
+  }
 }

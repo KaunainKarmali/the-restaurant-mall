@@ -244,7 +244,9 @@ body {
 
 ul,
 li,
-body {
+body,
+p,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -347,7 +349,6 @@ button:hover, button:focus {
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0px 0px 40px 0px;
 }
 
 *::-moz-placeholder {
@@ -355,7 +356,6 @@ button:hover, button:focus {
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0px 0px 40px 0px;
 }
 
 *:-ms-input-placeholder {
@@ -363,7 +363,6 @@ button:hover, button:focus {
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0px 0px 40px 0px;
 }
 
 *::-ms-input-placeholder {
@@ -371,7 +370,6 @@ button:hover, button:focus {
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0px 0px 40px 0px;
 }
 
 p,
@@ -380,7 +378,6 @@ p,
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0px 0px 40px 0px;
 }
 
 img {
@@ -413,7 +410,7 @@ a:hover, a:focus {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0px auto;
   padding: 50px 0;
 }
@@ -486,6 +483,48 @@ a:hover, a:focus {
   grid-area: main;
 }
 
+.title-container {
+  grid-column: 2/span 3;
+  grid-row: 3/span 5;
+}
+
+.home-header-image {
+  background-image: url("../assets/home/home-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+h1 .title-style {
+  display: inline-block;
+  background: white;
+  color: #2b331b;
+}
+
+.home-image-alt {
+  grid-column: 7/-1;
+  grid-row: 1/-1;
+  position: relative;
+  top: 180px;
+}
+
+.blog-header-image {
+  background-image: url("../assets/blog/blog-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.contact-header-image {
+  background-image: url("../assets/contact/contact-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
 nav {
   margin: 0px;
 }
@@ -521,51 +560,6 @@ nav {
   right: 20px;
 }
 
-.title-container {
-  grid-column: 2/span 3;
-  grid-row: 3/span 5;
-}
-
-.home-header-image {
-  background-image: url("../assets/home/home-header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-}
-
-h1 .title-style {
-  display: inline-block;
-  background: white;
-  color: #2b331b;
-}
-
-.home-image-alt {
-  grid-column: 7/-1;
-  grid-row: 6/-1;
-  position: relative;
-}
-
-.home-image-alt img {
-  position: absolute;
-}
-
-.blog-header-image {
-  background-image: url("../assets/blog/blog-header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-}
-
-.contact-header-image {
-  background-image: url("../assets/contact/contact-header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-}
-
 footer {
   margin: 0;
   padding: 5px;
@@ -590,11 +584,12 @@ footer p {
   grid-template-rows: auto auto;
   place-items: center start;
 }
-
 .card .icon-container {
-  justify-self: center;
+  justify-self: start;
+  background-color: #ffd300;
+  padding: 5px;
+  border-radius: 50px;
 }
-
 .card .content {
   grid-column: 2/-1;
 }
@@ -619,12 +614,6 @@ footer p {
   grid-row: 7/-1;
 }
 
-.icon-container {
-  background-color: #ffd300;
-  padding: 5px;
-  border-radius: 50px;
-}
-
 .icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,59 +634,46 @@ footer p {
   background-color: #171b0e;
   color: white;
 }
-
-.features-section > .grid-container {
-  grid-template-rows: 50px auto 75px auto 50px;
+.features-section p {
+  margin-bottom: 20px;
 }
-
-.left-image {
-  grid-column: 2/span 4;
-  grid-row: 1/3;
+.features-section .left-image {
+  grid-column: 1/span 6;
+  grid-row: 1/span 6;
   position: relative;
+  bottom: 65px;
+  padding-right: 50px;
 }
-
-.left-image img {
-  box-shadow: 15px 15px 0px 0px #ffd300;
-  -webkit-box-shadow: 15px 15px 0px 0px #ffd300;
-  -moz-box-shadow: 15px 15px 0px 0px #ffd300;
-  position: absolute;
-  bottom: 15px;
+.features-section .right-content {
+  grid-column: 7/span 5;
+  grid-row: 1/span 6;
+  padding-left: 50px;
 }
-
-.right-content {
-  grid-column: 8/11;
-  grid-row: 2/3;
-}
-
-.left-content {
-  grid-column: 3/span 3;
-  grid-row: 4/5;
-  text-align: right;
-  justify-self: end;
-}
-
-.right-image {
-  grid-column: 8/12;
-  grid-row: 4/8;
+.features-section .right-image {
+  grid-column: 7/span 6;
+  grid-row: 7/span 6;
   position: relative;
+  top: 75px;
+  padding-left: 50px;
 }
-
-.right-image img {
-  position: absolute;
+.features-section .left-content {
+  grid-column: 2/span 5;
+  grid-row: 7/span 6;
+  margin-top: 75px;
+  padding-right: 50px;
 }
 
 .winning-section {
-  padding: 50px 0px;
   text-align: center;
   background-color: #2b331b;
 }
-
 .winning-section h3 {
+  margin: 50px 0px 20px;
   color: #ffd300;
 }
-
 .winning-section p {
-  padding: 50px;
+  width: 70%;
+  margin: 0px auto 20px;
   text-align: left;
   color: white;
 }
@@ -712,33 +688,36 @@ footer p {
 }
 
 .spaces-section {
-  padding: 100px 0px;
   background-color: #2b331b;
   color: white;
 }
-
 .spaces-section .image {
-  grid-column: 3/5;
+  grid-column: 2/5;
+  grid-row: 1/-1;
 }
-
 .spaces-section .content {
-  grid-column: 6/10;
+  grid-column: 6/-2;
+  grid-row: 1/-1;
 }
-
+.spaces-section .content-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+  justify-items: start;
+}
 .spaces-section .content h3 {
-  margin: 0px 0px 20px 0px;
   color: #ffd300;
   text-align: left;
-  line-height: 1;
 }
 
 .gallery-section {
-  padding: 50px 0px;
   background-color: #171b0e;
 }
 
 .gallery-container {
-  grid-column: 3/span 8;
+  grid-column: 2/-2;
+  grid-row: 1/-1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 30px;
@@ -1018,4 +997,19 @@ footer p {
 
 .form-container {
   padding: 50px;
+}
+
+@media (max-width: 1290px) {
+  h3 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  .home-image-alt {
+    top: 220px;
+  }
 }

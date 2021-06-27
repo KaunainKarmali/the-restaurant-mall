@@ -13,14 +13,17 @@
   grid-template-columns: 1fr 5fr;
   grid-template-rows: auto auto;
   place-items: center start;
-}
 
-.card .icon-container {
-  justify-self: center;
-}
+  .icon-container {
+    justify-self: start;
+    background-color: $yellow;
+    padding: $extraSmall;
+    border-radius: $extraLarge;
+  }
 
-.card .content {
-  grid-column: 2/-1;
+  .content {
+    grid-column: 2/-1;
+  }
 }
 
 .card1 {
@@ -41,12 +44,6 @@
 .card4 {
   grid-column: 7 / span 5;
   grid-row: 7/-1;
-}
-
-.icon-container {
-  background-color: $yellow;
-  padding: $extraSmall;
-  border-radius: $extraLarge;
 }
 
 .icon {

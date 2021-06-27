@@ -6,8 +6,8 @@
 
 // General
 @import "./partials/multi-page"; // multiple pages styles
-@import "./partials/nav"; // nav styles
 @import "./partials/header"; // header styles
+@import "./partials/nav"; // nav styles
 @import "./partials/footer"; // footer styles
 
 // Home page styles
@@ -21,3 +21,6 @@
 // Blog page styles
 @import "./partials/blog"; // blog page styles
 @import "./partials/contact"; // blog page styles
+
+// Media queries
+@import "./partials/media_queries"; // media queries styles

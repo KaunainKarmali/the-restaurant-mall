@@ -6,7 +6,9 @@ body {
 
 ul,
 li,
-body {
+body,
+p,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -114,7 +116,7 @@ p,
   font-size: 1.25rem;
   line-height: 28px;
   letter-spacing: 1px;
-  margin: 0px 0px $large 0px;
+  // margin: 0px 0px $large 0px;
 }
 
 img {
@@ -148,7 +150,7 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0px auto;
   padding: 50px 0;
 }
