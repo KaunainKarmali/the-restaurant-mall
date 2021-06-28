@@ -1,0 +1,43 @@
+// ***********************
+// Employment section styles
+// ***********************
+
+.blog-main {
+  grid-column: 6 / -1;
+  grid-row: 1 / -1;
+}
+
+.blog-main-container {
+  display: grid;
+  grid-template-columns: auto 9.7%;
+  grid-template-rows: repeat(2, auto);
+  border-bottom: 2px solid $yellow;
+  border-left: 2px solid $yellow;
+}
+
+.blog-main-image {
+  padding: 0px 0px 15px 15px;
+  grid-column: 1 / -1;
+  position: relative;
+  height: 380px;
+  bottom: 40%;
+  right: 2px;
+}
+
+.blog-main-content {
+  grid-column: 1/-2;
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  row-gap: 20px;
+  padding: 0px 0px 75px 75px;
+  color: $white;
+
+  h4 {
+    margin: 0;
+    line-height: 40px;
+  }
+
+  .sub-title {
+    color: $white;
+  }
+}

@@ -17,17 +17,18 @@
   column-gap: $extraLarge;
 }
 
-// .grid-inner-container aside {
-//   grid-area: aside;
-// }
-
 .aside-container {
   display: grid;
   grid-template-columns: 100px repeat(10, 1fr) 30px;
   grid-template-rows: repeat(12, 1fr);
 }
 
-.blog-main,
+.sub-title {
+  font-weight: 700;
+  color: $yellow;
+  margin: 0;
+}
+
 .contact-main {
   grid-area: main;
 }

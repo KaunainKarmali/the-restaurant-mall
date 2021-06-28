@@ -11,6 +11,15 @@
   display: grid;
   grid-template-columns: 20% auto 10px;
   grid-template-rows: repeat(4, 1fr) auto;
+
+  li {
+    list-style-type: disc;
+    margin-left: 15px;
+    font-size: 1rem;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-family: $fontAlternative;
+  }
 }
 
 .blog-aside-image {
@@ -35,21 +44,12 @@
   padding: 10px 10px 10px 10px;
   background-color: $blackAlt;
   color: $white;
-}
 
-.blog-aside-content h6 {
-  line-height: 20px;
+  h6 {
+    line-height: 20px;
+  }
 }
 
 .posts-title {
   margin-top: 40px;
-}
-
-.blog-aside-container li {
-  list-style-type: disc;
-  margin-left: 15px;
-  font-size: 1rem;
-  line-height: 15px;
-  letter-spacing: 1px;
-  font-family: $fontAlternative;
 }
