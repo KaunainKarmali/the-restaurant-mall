@@ -11,16 +11,19 @@
 @import "./partials/footer"; // footer styles
 
 // Home page styles
-@import "./partials/about"; // about styles
-@import "./partials/features"; // features styles
-@import "./partials/winnings"; // winnings styles
-@import "./partials/location"; // location styles
-@import "./partials/spaces"; // spaces styles
-@import "./partials/gallery"; // gallery styles
+@import "./partials/home-about"; // about styles
+@import "./partials/home-features"; // features styles
+@import "./partials/home-winnings"; // winnings styles
+@import "./partials/home-location"; // location styles
+@import "./partials/home-spaces"; // spaces styles
+@import "./partials/home-gallery"; // gallery styles
 
 // Blog page styles
-@import "./partials/blog"; // blog page styles
-@import "./partials/contact"; // blog page styles
+@import "./partials/blog-general"; // genearal page styles
+@import "./partials/blog-aside"; // aside styles
+
+// Contact page styles
+@import "./partials/contact"; // contact page styles
 
 // Media queries
 @import "./partials/media-queries-home"; // home page

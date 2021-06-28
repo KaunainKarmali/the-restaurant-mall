@@ -1,0 +1,57 @@
+// ***********************
+// Main styles
+// ***********************
+
+.blog-main {
+  grid-column: 5 / span 8;
+  grid-row: 1 / -1;
+}
+
+// -----------------
+// Main styles
+// -----------------
+
+// Employment opportunities styles
+
+.blog-main .main-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 100px;
+  grid-template-rows: auto auto;
+  border-bottom: 2px solid $yellow;
+}
+
+.blog-main .main-image {
+  padding: 0px 0px 15px 15px;
+  grid-column: 1/-1;
+  position: relative;
+  height: 250px;
+}
+
+.blog-main .main-image img {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  width: calc(100% - 15px);
+}
+
+.blog-main .main-content {
+  grid-column: 1/-2;
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  row-gap: 20px;
+  border-left: 2px solid $yellow;
+  padding: 0px 0px 75px 75px;
+}
+
+.blog-main .main-content h4 {
+  margin: 30px 0px 0px 0px;
+}
+
+.blog-main .main-content p {
+  margin: 0;
+  color: $white;
+}
+
+.sub-title {
+  font-weight: 700;
+}

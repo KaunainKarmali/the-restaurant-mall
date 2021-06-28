@@ -1,0 +1,19 @@
+// ***********************
+// Media queries for home page
+// ***********************
+
+@media (max-width: 1290px) {
+  // -----------------------
+  // General styles
+  // -----------------------
+  h6 {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+
+  .blog-aside-content {
+    p {
+      line-height: 20px;
+    }
+  }
+}
