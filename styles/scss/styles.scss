@@ -27,6 +27,6 @@
 @import "./partials/contact/contact"; // contact page styles
 
 // Media queries
-@import "./partials/media-queries/media-queries-home"; // home page
-@import "./partials/media-queries/media-queries-blog"; // blog page
-@import "./partials/media-queries/media-queries-contact"; // contact page
+@import "./partials/media-queries/media-queries-desktop"; // desktop
+@import "./partials/media-queries/media-queries-tablet"; // tablet
+@import "./partials/media-queries/media-queries-mobile"; // mobile

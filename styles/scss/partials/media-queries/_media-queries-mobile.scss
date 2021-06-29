@@ -1,0 +1,89 @@
+// ***********************************************
+// Media queries for mobile (x < 500px)
+// ***********************************************
+
+@media (max-width: 450px) {
+  // -----------------------
+  // Home | Winning section styles
+  // -----------------------
+  .winning-section {
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  // -----------------------
+  // General styles
+  // -----------------------
+  h1 {
+    text-align: center;
+    font-size: calc(2.5rem + 1vw);
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  .container {
+    padding: 30px 0px;
+  }
+
+  // -----------------------
+  // Nav styles
+  // -----------------------
+  .nav-container {
+    grid-column: 1 / -1;
+  }
+
+  .nav-links {
+    background-color: $black;
+    opacity: 0.75;
+
+    a {
+      padding: 2.5px;
+    }
+
+    a::after {
+      width: calc(100% - 7.5px);
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+
+  // -----------------------
+  // Home | Location section styles
+  // -----------------------
+
+  .location-section {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  // -----------------------
+  // Header styles
+  // -----------------------
+
+  h1 {
+    font-size: calc(2rem + 1vw);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  // -----------------------
+  // Home | About section styles
+  // -----------------------
+
+  .about-section {
+    .icon {
+      width: $spacingS;
+      height: $spacingS;
+      font-size: 1rem;
+    }
+  }
+}

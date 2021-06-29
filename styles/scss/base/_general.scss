@@ -85,65 +85,18 @@ h6 {
 }
 
 // -------------------
-// Containers
-// -------------------
-
-.container {
-  max-width: 1400px;
-  margin: 0px auto;
-  padding: 50px 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 5% repeat(10, 1fr) 5%;
-  grid-template-rows: repeat(12, 1fr);
-  column-gap: $gapS;
-}
-
-.flex-container {
-  display: flex;
-  align-items: flex-start;
-}
-
-// .grid-container {
-//   display: grid;
-//   grid-template-columns: auto 50px repeat(8, minmax(auto, 175px)) 50px auto;
-// }
-
-// -------------------
-// Box shadows
-// -------------------
-
-.left-bottom-shadow {
-  box-shadow: -15px 15px 0px 0px $yellow;
-  -webkit-box-shadow: -15px 15px 0px 0px $yellow;
-  -moz-box-shadow: -15px 15px 0px 0px $yellow;
-}
-
-.right-bottom-shadow {
-  box-shadow: 15px 15px 0px 0px $yellow;
-  -webkit-box-shadow: 15px 15px 0px 0px $yellow;
-  -moz-box-shadow: 15px 15px 0px 0px $yellow;
-}
-
-// .grid-container-alt {
-//   display: grid;
-//   grid-template-columns: 1fr minmax(auto, 1400px) 1fr;
-//   grid-template-rows: 75px auto 75px;
-// }
-
-// -------------------
 // Misc styles
 // -------------------
 
 p,
-*::placeholder {
+input,
+textarea,
+input::placeholder,
+textarea::placeholder {
   font-family: $fontAlternative;
   font-size: $fontSizeXS;
   line-height: $lineHeightXS;
   letter-spacing: $letterSpacingM;
-  // margin: 0px 0px $large 0px;
 }
 
 img {
@@ -192,19 +145,5 @@ button {
     color: $yellow;
     background-color: $pine;
     // border: 2px solid $yellow;
-  }
-}
-
-.alt-button {
-  color: $white;
-  background-color: $black;
-  border-color: $black;
-  // padding: 0px $standard;
-
-  &:hover,
-  &:focus {
-    color: $black;
-    background-color: $white;
-    // border-color: $black;
   }
 }
