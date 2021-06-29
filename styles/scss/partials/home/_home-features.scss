@@ -9,7 +9,7 @@
   // Section styles
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: $spacingM;
   }
 
   // Top row styles
@@ -19,13 +19,13 @@
     grid-row: 1 / span 6;
     position: relative;
     bottom: 65px;
-    padding-right: 50px;
+    padding-right: $spacingM;
   }
 
   .right-content {
     grid-column: 7 / span 5;
     grid-row: 1 / span 6;
-    padding-left: 50px;
+    padding-left: $spacingM;
   }
 
   // Bottom row styles
@@ -34,14 +34,14 @@
     grid-column: 7 / span 6;
     grid-row: 7 / span 6;
     position: relative;
-    top: 75px;
-    padding-left: 50px;
+    top: $spacingL;
+    padding-left: $spacingM;
   }
 
   .left-content {
     grid-column: 2 / span 5;
     grid-row: 7 / span 6;
-    margin-top: 75px;
-    padding-right: 50px;
+    margin-top: $spacingL;
+    padding-right: $spacingM;
   }
 }

@@ -16,7 +16,7 @@
 }
 
 .blog-main-image {
-  padding: 0px 0px 15px 15px;
+  padding: 0px 0px $spacingXS $spacingXS;
   grid-column: 1 / -1;
   position: relative;
   height: 380px;
@@ -29,16 +29,17 @@
 }
 
 .blog-main-content {
-  grid-column: 1/-2;
+  grid-column: 1 / -2;
   display: grid;
   grid-template-rows: repeat(6, auto);
-  row-gap: 20px;
-  padding: 0px 0px 75px 75px;
+  row-gap: $gapM;
+  padding: $spacingL 0px $spacingL $spacingL;
   color: $white;
 
   h4 {
     margin: 0;
-    line-height: 40px;
+    line-height: $lineHeightM;
+    font-size: $fontSizeL;
   }
 
   .sub-title {

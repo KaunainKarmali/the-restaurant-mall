@@ -1,3 +1,7 @@
+// ***********************
+// Functions
+// ***********************
+
 @mixin backgroundImg($url, $height: $imgHeight) {
   background-image: url($url);
   background-position: center;

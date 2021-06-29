@@ -3,15 +3,6 @@
 // ***********************
 
 // -----------------------
-// Multi page styles
-// -----------------------
-
-.title-container {
-  grid-column: 2 / span 4;
-  grid-row: 3 / span 5;
-}
-
-// -----------------------
 // Home page styles
 // -----------------------
 
@@ -26,8 +17,8 @@ h1 .title-style {
 }
 
 .home-image-alt {
-  grid-column: 7/-1;
-  grid-row: 1/-1;
+  grid-column: 7 / -1;
+  grid-row: 1 / -1;
   position: relative;
   top: 180px;
 }

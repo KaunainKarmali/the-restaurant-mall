@@ -14,9 +14,9 @@
 
   li {
     list-style-type: disc;
-    margin-left: 15px;
+    margin-left: $spacingXS;
     font-size: 1rem;
-    line-height: 15px;
+    line-height: $lineHeightXS;
     letter-spacing: 1px;
     font-family: $fontAlternative;
   }
@@ -31,7 +31,7 @@
 .blog-aside-image::after {
   content: "";
   height: 340px;
-  width: 10px;
+  width: $spacingXXS;
   position: absolute;
   bottom: 0;
   background-color: $blackAlt;
@@ -41,15 +41,16 @@
   grid-column: 2 / -1;
   grid-row: 3 / -1;
   margin-top: -5px;
-  padding: 10px 10px 10px 10px;
+  padding: $spacingXS $spacingXXS;
   background-color: $blackAlt;
   color: $white;
 
   h6 {
+    font-size: $fontSizeS;
     line-height: 20px;
   }
 }
 
 .posts-title {
-  margin-top: 40px;
+  margin-top: $spacingM;
 }

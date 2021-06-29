@@ -3,13 +3,13 @@
 // ***********************
 
 .comments-container {
-  grid-column: 1 / 2;
   display: grid;
   grid-template-columns: 1fr 11.5%;
   grid-template-rows: repeat(2, auto);
+  padding: $spacingM 0px 0px $spacingL;
 
   h5 {
-    margin: 30px 0px;
+    margin-bottom: $spacingS;
     color: $white;
   }
 }
@@ -23,15 +23,15 @@
   display: grid;
   grid-template-columns: 80px auto;
   grid-template-rows: 1fr;
-  column-gap: 20px;
-  margin-bottom: 75px;
+  column-gap: $gapM;
+  margin-bottom: $spacingL;
 
   .content {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
-    row-gap: 10px;
+    row-gap: $gapS;
     color: $white;
   }
 

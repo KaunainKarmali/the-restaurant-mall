@@ -7,13 +7,13 @@
   background-color: $pine;
 
   h3 {
-    margin: 50px 0px 20px;
+    margin: $spacingM 0px $spacingS;
     color: $yellow;
   }
 
   p {
     width: 70%;
-    margin: 0px auto 20px;
+    margin: 0px auto $spacingS;
     text-align: left;
     color: $white;
   }

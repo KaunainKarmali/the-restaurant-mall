@@ -15,13 +15,15 @@ body {
 body,
 nav,
 h1,
-h2 h3,
+h2,
+h3,
 h4,
 h5,
 h6,
 ul,
 li,
-p {
+p,
+footer {
   margin: 0;
   padding: 0;
 }
@@ -96,7 +98,7 @@ h6 {
   display: grid;
   grid-template-columns: 5% repeat(10, 1fr) 5%;
   grid-template-rows: repeat(12, 1fr);
-  column-gap: 10px;
+  column-gap: $gapS;
 }
 
 .flex-container {
@@ -164,7 +166,7 @@ a {
   position: relative;
   text-decoration: none;
   color: $white;
-  padding: 0px $standard;
+  padding: 0px $spacingS;
   font-size: $fontSizeXS;
   cursor: pointer;
 
@@ -182,7 +184,7 @@ button {
   background-color: $yellow;
   border: 2px solid $yellow;
   border-radius: 2px;
-  padding: 0px $small;
+  padding: 0px $spacingXXS;
 
   &:hover,
   &:focus {

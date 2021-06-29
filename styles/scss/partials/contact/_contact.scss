@@ -18,17 +18,17 @@
 }
 
 .social-icons {
-  margin-bottom: 20px;
+  margin-bottom: $spacingS;
 }
 
 .social-icon {
   font-size: 2rem;
-  padding-right: 20px;
+  padding-right: $spacingS;
   color: $yellow;
 }
 
 .email-address {
-  margin-bottom: 30px;
+  margin-bottom: $spacingS;
 }
 
 .address p {
@@ -58,5 +58,5 @@
 }
 
 .form-wrapper {
-  padding: 50px;
+  padding: $spacingM;
 }

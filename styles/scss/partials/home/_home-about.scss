@@ -3,7 +3,7 @@
 // ***********************
 
 .about-section {
-  padding: 100px 0px;
+  padding: $spacingXL 0px;
   background-color: $pine;
   color: $white;
 }
@@ -17,33 +17,33 @@
   .icon-container {
     justify-self: start;
     background-color: $yellow;
-    padding: $extraSmall;
-    border-radius: $extraLarge;
+    padding: $spacingXXXS;
+    border-radius: 50%;
   }
 
   .content {
-    grid-column: 2/-1;
+    grid-column: 2 / -1;
   }
 }
 
 .card1 {
   grid-column: 2 / span 5;
-  grid-row: 1/7;
+  grid-row: 1 / 7;
 }
 
 .card2 {
   grid-column: 7 / span 5;
-  grid-row: 1/7;
+  grid-row: 1 / 7;
 }
 
 .card3 {
   grid-column: 2 / span 5;
-  grid-row: 7/-1;
+  grid-row: 7 / -1;
 }
 
 .card4 {
   grid-column: 7 / span 5;
-  grid-row: 7/-1;
+  grid-row: 7 / -1;
 }
 
 .icon {
@@ -51,7 +51,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  width: $large;
-  height: $large;
+  width: $spacingM;
+  height: $spacingM;
   color: $black;
 }
