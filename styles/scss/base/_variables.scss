@@ -12,6 +12,31 @@ $pine: rgba(43, 51, 27, 1);
 $fontStandard: "Josefin Sans", sans-serif;
 $fontAlternative: "Barlow", sans-serif;
 
+// Line heights
+$lineHeightXS: 28px;
+$lineHeightS: 29px;
+$lineHeightM: 41.6px;
+$lineHeightL: 58px;
+$lineHeightXL: 99.8px;
+
+// Font weight
+$weightRegular: 400;
+$weightSemibold: 600;
+$weightBold: 700;
+
+// Font size
+$fontSizeXS: calc((20 / 16) * 1rem);
+$fontSizeS: calc((22.4 / 16) * 1rem);
+$fontSizeM: calc((25 / 16) * 1rem);
+$fontSizeL: calc((40 / 16) * 1rem);
+$fontSizeXL: calc((45 / 16) * 1rem);
+$fontSizeXXL: calc(3.5rem + 1vw);
+
+// Letter spacing
+$letterSpacingS: 0.8px;
+$letterSpacingM: 1px;
+$letterSpacingL: 1.3px;
+
 // Image sizing
 $imgHeight: 600px;
 
@@ -22,3 +47,19 @@ $standard: 20px;
 $medium: 30px;
 $large: 40px;
 $extraLarge: 50px;
+
+// Spacing
+$spacingXXXS: 5px;
+$spacingXXS: 10px;
+$spacingXS: 15px;
+$spacingS: 20px;
+$spacingM: 50px;
+$spacingL: 75px;
+$spacingXL: 100px;
+
+// Gaps
+$gapS: 10px;
+$gapM: 20px;
+$gapL: 30px;
+$gapXL: 40px;
+$gapXXL: 50px;

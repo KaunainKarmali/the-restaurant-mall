@@ -43,8 +43,8 @@
             <!-- END: Nav-container -->
 
             <!-- START: Title-container -->
-            <div class="title-container">
-              <h2>Blog</h2>
+            <div class="title-container contact-title">
+              <h2>Get in touch</h2>
             </div>
             <!-- END: Title-container -->
           </div>
@@ -53,105 +53,113 @@
     </header>
     <!-- END: Header -->
 
-    <!-- START: Outter grid -->
-    <div class="grid-container-alt pine-bg">
-      <!-- START: Inner grid -->
-      <div class="grid-inner-container">
-        <!-- START: Aside -->
-        <aside class="contact-aside">
-          <div class="contact-aside-container">
-            <ul class="flex-container social-icons">
-              <li><i class="fab fa-facebook-f social-icon"></i></li>
-              <li><i class="fab fa-instagram social-icon"></i></li>
-              <li><i class="fab fa-twitter social-icon"></i></li>
-              <li><i class="fab fa-whatsapp social-icon"></i></li>
-            </ul>
-            <p class="email-address">info@email.com</p>
-            <div class="address">
-              <p>123-456-7890</p>
-              <p>123 Queen Street West, Unit 10</p>
-              <p>Toronto, Ontario</p>
-              <p>M5V 2D5</p>
+    <!-- START: Full bleed grid -->
+    <div class="pine-bg">
+      <!-- START: Outer grid -->
+      <div class="container">
+        <!-- START: Inner grid -->
+        <div class="grid contact-grid-mobile">
+          <!-- START: Aside -->
+          <aside class="contact-aside">
+            <div class="contact-aside-container">
+              <ul class="flex-container social-icons">
+                <li><i class="fab fa-facebook-f social-icon"></i></li>
+                <li><i class="fab fa-instagram social-icon"></i></li>
+                <li><i class="fab fa-twitter social-icon"></i></li>
+                <li><i class="fab fa-whatsapp social-icon"></i></li>
+              </ul>
+              <p class="email-address">info@email.com</p>
+              <div class="address">
+                <p>123-456-7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V 2D5</p>
+              </div>
             </div>
-          </div>
-        </aside>
-        <!-- END: Aside -->
+          </aside>
+          <!-- END: Aside -->
 
-        <!-- START: Main -->
-        <main class="contact-main">
-          <!-- START: Contact form section -->
-          <section class="contact-form-section">
-            <!-- START: Contact form container -->
-            <div class="contact-form-container">
-              <!-- START: Contact form -->
-              <form action="#">
-                <!-- START: Contact form inner container -->
-                <div
-                  class="
-                    form-container form-wrapper
-                    right-bottom-shadow
-                    form-position
-                  "
-                >
-                  <!-- START: Name input container -->
-                  <div class="input-container">
-                    <label for="name" class="name-label sr-only">Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                      class="name-input input-areas"
-                    />
+          <!-- START: Main -->
+          <main class="contact-main">
+            <!-- START: Contact form section -->
+            <section class="contact-form-section">
+              <!-- START: Contact form container -->
+              <div class="contact-form-container">
+                <!-- START: Contact form -->
+                <form action="#">
+                  <!-- START: Contact form inner container -->
+                  <div
+                    class="
+                      form-container form-wrapper
+                      right-bottom-shadow
+                      form-position
+                    "
+                  >
+                    <!-- START: Name input container -->
+                    <div class="input-container">
+                      <label for="name" class="name-label sr-only">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                        class="name-input input-areas"
+                      />
+                    </div>
+                    <!-- END: Name input container -->
+
+                    <!-- START: Email input container -->
+                    <div class="input-container">
+                      <label for="email" class="email-label sr-only"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email address"
+                        class="email-input input-areas"
+                      />
+                    </div>
+                    <!-- END: Email input container -->
+
+                    <!-- START: Comment input container -->
+                    <div class="comment-input-container">
+                      <label for="message" class="message-label sr-only"
+                        >Comment</label
+                      >
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                        class="message-input input-areas input-textarea"
+                      ></textarea>
+                    </div>
+                    <!-- END: Comment input container -->
+
+                    <!-- START: Submit btn -->
+                    <button type="submit" class="submit-btn">
+                      Post Comment
+                    </button>
+                    <!-- END: Submit btn -->
                   </div>
-                  <!-- END: Name input container -->
-
-                  <!-- START: Email input container -->
-                  <div class="input-container">
-                    <label for="email" class="email-label sr-only">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email address"
-                      class="email-input input-areas"
-                    />
-                  </div>
-                  <!-- END: Email input container -->
-
-                  <!-- START: Comment input container -->
-                  <div class="comment-input-container">
-                    <label for="message" class="message-label sr-only"
-                      >Comment</label
-                    >
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="30"
-                      rows="10"
-                      placeholder="Message"
-                      class="message-input input-areas input-textarea"
-                    ></textarea>
-                  </div>
-                  <!-- END: Comment input container -->
-
-                  <!-- START: Submit btn -->
-                  <button type="submit" class="submit-btn">Post Comment</button>
-                  <!-- END: Submit btn -->
-                </div>
-                <!-- END: Contact form inner container -->
-              </form>
-              <!-- END: Contact form -->
-            </div>
-            <!-- END: Contact form container -->
-          </section>
-          <!-- END: Contact form section -->
-        </main>
-        <!-- END: Main -->
+                  <!-- END: Contact form inner container -->
+                </form>
+                <!-- END: Contact form -->
+              </div>
+              <!-- END: Contact form container -->
+            </section>
+            <!-- END: Contact form section -->
+          </main>
+          <!-- END: Main -->
+        </div>
+        <!-- END: Inner grid -->
       </div>
-      <!-- END: Inner grid -->
+      <!-- END: Outer grid -->
     </div>
-    <!-- END: Outter grid -->
+    <!-- END: Full bleed grid -->
   </body>
   <footer>
     <p>Copyright &copy; 2021 Juno College</p>

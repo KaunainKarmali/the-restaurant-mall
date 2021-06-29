@@ -5,10 +5,11 @@
 // Aside styles
 
 .contact-aside {
-  grid-area: aside;
+  grid-column: 2 / 4;
+  grid-row: 1 / -1;
   display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-areas: "gutter contact-aside-container";
+  grid-template-columns: auto;
+  grid-template-areas: "contact-aside-container";
 }
 
 .contact-aside-container {
@@ -37,16 +38,18 @@
 // Main styles
 
 .contact-main {
-  grid-area: main;
+  grid-column: 5 / 12;
+  grid-row: 1 / -1;
+
+  .contact-form-container {
+    grid-template-columns: auto;
+    padding: 0;
+  }
 
   .form-container,
   .input-areas {
     background-color: $blackAlt;
   }
-}
-
-.contact-main .contact-form-container {
-  padding: 0;
 }
 
 .form-position {

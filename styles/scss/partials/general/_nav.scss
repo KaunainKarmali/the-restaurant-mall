@@ -3,11 +3,15 @@
 // ***********************
 
 nav {
-  margin: 0px;
+  font-weight: $weightBold;
+  font-size: $fontSizeXS;
+  line-height: $lineHeightS;
+  letter-spacing: $spacingM;
+  text-align: center;
 }
 
 .nav-container {
-  grid-column: 2/12;
+  grid-column: 2 / 12;
   grid-row: 1 / span 1;
 }
 
@@ -15,11 +19,11 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: start;
-  column-gap: 10px;
+  column-gap: $gapS;
 }
 
 .nav-link a {
-  padding: 10px 20px 10px 0px;
+  padding: $spacingXXS $spacingS $spacingXXS 0px;
 }
 
 .active::after {
@@ -27,8 +31,8 @@ nav {
   background-color: $yellow;
   display: inline-block;
   position: absolute;
-  width: calc(100% - 20px);
+  width: calc(100% - $spacingS);
   height: 2px;
-  bottom: 10px;
-  right: 20px;
+  bottom: $spacingXXS;
+  right: $spacingS;
 }

@@ -5,29 +5,29 @@
 @import "./base/general"; // general styles
 
 // General
-@import "./partials/multi-page"; // multiple pages styles
-@import "./partials/header"; // header styles
-@import "./partials/nav"; // nav styles
-@import "./partials/footer"; // footer styles
+@import "./partials/general/multi-page"; // multiple pages styles
+@import "./partials/general/header"; // header styles
+@import "./partials/general/nav"; // nav styles
+@import "./partials/general/footer"; // footer styles
 
 // Home page styles
-@import "./partials/home-about"; // about styles
-@import "./partials/home-features"; // features styles
-@import "./partials/home-winnings"; // winnings styles
-@import "./partials/home-location"; // location styles
-@import "./partials/home-spaces"; // spaces styles
-@import "./partials/home-gallery"; // gallery styles
+@import "./partials/home/home-about"; // about styles
+@import "./partials/home/home-features"; // features styles
+@import "./partials/home/home-winnings"; // winnings styles
+@import "./partials/home/home-location"; // location styles
+@import "./partials/home/home-spaces"; // spaces styles
+@import "./partials/home/home-gallery"; // gallery styles
 
 // Blog page styles
-@import "./partials/blog-aside"; // aside styles
-@import "./partials/blog-employment"; // employment section styles
-@import "./partials/blog-comments"; // comments section styles
-@import "./partials/blog-contact"; // contact section styles
+@import "./partials/blog/blog-aside"; // aside styles
+@import "./partials/blog/blog-employment"; // employment section styles
+@import "./partials/blog/blog-comments"; // comments section styles
+@import "./partials/blog/blog-contact"; // contact section styles
 
 // Contact page styles
-@import "./partials/contact"; // contact page styles
+@import "./partials/contact/contact"; // contact page styles
 
 // Media queries
-@import "./partials/media-queries-home"; // home page
-@import "./partials/media-queries-blog"; // blog page
-@import "./partials/media-queries-contact"; // contact page
+@import "./partials/media-queries/media-queries-home"; // home page
+@import "./partials/media-queries/media-queries-blog"; // blog page
+@import "./partials/media-queries/media-queries-contact"; // contact page

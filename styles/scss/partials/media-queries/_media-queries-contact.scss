@@ -1,0 +1,55 @@
+// ***********************
+//  Media queries for contact page
+// ***********************
+
+@media (max-width: 800px) {
+  .contact-grid-mobile {
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 50px;
+  }
+
+  .contact-main {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    .form-position {
+      position: static;
+    }
+  }
+
+  .contact-aside {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-title {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .contact-main {
+    .form-container {
+      padding: 15px;
+    }
+
+    .right-bottom-shadow {
+      box-shadow: none;
+    }
+  }
+
+  .contact-aside {
+    text-align: center;
+
+    .flex-container {
+      justify-content: space-evenly;
+    }
+
+    .social-icon {
+      padding: 0px 10px;
+    }
+  }
+}
