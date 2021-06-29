@@ -20,7 +20,7 @@
   display: grid;
   grid-template-rows: repeat(6, auto);
   row-gap: $gapM;
-  padding: 0px 0px $spacingL $spacingL;
+  padding: $spacingL 0px $spacingL $spacingL;
   color: $white;
 
   h4 {
