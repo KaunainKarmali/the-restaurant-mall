@@ -879,7 +879,7 @@ footer {
   display: grid;
   grid-template-rows: repeat(6, auto);
   row-gap: 20px;
-  padding: 0px 0px 75px 75px;
+  padding: 75px 0px 75px 75px;
   color: white;
 }
 .blog-main-content h4 {
@@ -1018,6 +1018,10 @@ footer {
 
   .blog-main-content h4 {
     font-size: calc((30 / 16) * 1rem);
+  }
+
+  .blog-main-content {
+    padding-top: 25px;
   }
 }
 @media (max-width: 1200px) {
