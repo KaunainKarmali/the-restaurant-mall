@@ -1,0 +1,40 @@
+// ***********************
+// Header section styles
+// ***********************
+
+// -----------------------
+// Home page styles
+// -----------------------
+
+.home-header-image {
+  @include backgroundImg("../assets/home/home-header.jpg", auto);
+}
+
+h1 .title-style {
+  display: inline-block;
+  background: $white;
+  color: $pine;
+}
+
+.home-image-alt {
+  grid-column: 7 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  top: 180px;
+}
+
+// -----------------------
+// Blog page styles
+// -----------------------
+
+.blog-header-image {
+  @include backgroundImg("../assets/blog/blog-header.jpg", auto);
+}
+
+// -----------------------
+// Contact page styles
+// -----------------------
+
+.contact-header-image {
+  @include backgroundImg("../assets/contact/contact-header.jpg", auto);
+}

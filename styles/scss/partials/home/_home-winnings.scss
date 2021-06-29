@@ -1,0 +1,20 @@
+// ***********************
+// Winnings section styles
+// ***********************
+
+.winning-section {
+  text-align: center;
+  background-color: $pine;
+
+  h3 {
+    margin: $spacingM 0px $spacingS;
+    color: $yellow;
+  }
+
+  p {
+    width: 70%;
+    margin: 0px auto $spacingS;
+    text-align: left;
+    color: $white;
+  }
+}

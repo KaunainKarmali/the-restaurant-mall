@@ -1,0 +1,38 @@
+// ***********************
+// Nav styles
+// ***********************
+
+.nav-container {
+  grid-column: 2 / 12;
+  grid-row: 1 / span 1;
+}
+
+nav {
+  font-weight: $weightBold;
+  font-size: $fontSizeXS;
+  line-height: $lineHeightS;
+  letter-spacing: $letterSpacingM;
+  text-align: center;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  column-gap: $gapS;
+}
+
+.nav-link a {
+  padding: $spacingXXS $spacingS $spacingXXS 0px;
+}
+
+.active::after {
+  content: "";
+  background-color: $yellow;
+  display: inline-block;
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 2px;
+  bottom: $spacingXXS;
+  right: $spacingS;
+}

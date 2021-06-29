@@ -1,0 +1,62 @@
+// ***********************
+// Contact page styles
+// ***********************
+
+// Aside styles
+
+.contact-aside {
+  grid-column: 2 / 4;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "contact-aside-container";
+}
+
+.contact-aside-container {
+  grid-area: contact-aside-container;
+  color: $white;
+}
+
+.social-icons {
+  margin-bottom: $spacingS;
+}
+
+.social-icon {
+  font-size: 2rem;
+  padding-right: $spacingS;
+  color: $yellow;
+}
+
+.email-address {
+  margin-bottom: $spacingS;
+}
+
+.address p {
+  margin: 0;
+}
+
+// Main styles
+
+.contact-main {
+  grid-column: 5 / 12;
+  grid-row: 1 / -1;
+
+  .contact-form-container {
+    grid-template-columns: auto;
+    padding: 0;
+  }
+
+  .form-container,
+  .input-areas {
+    background-color: $blackAlt;
+  }
+}
+
+.form-position {
+  position: relative;
+  bottom: 200px;
+}
+
+.form-wrapper {
+  padding: $spacingM;
+}

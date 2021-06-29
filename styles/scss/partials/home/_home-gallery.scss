@@ -1,15 +1,15 @@
 // ***********************
-// Features section styles
+// Gallery section styles
 // ***********************
 
 .gallery-section {
-  padding: $extraLarge 0px;
   background-color: $blackAlt;
 }
 
 .gallery-container {
-  grid-column: 3 / span 8;
+  grid-column: 2 / -2;
+  grid-row: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: $medium;
+  column-gap: $gapL;
 }

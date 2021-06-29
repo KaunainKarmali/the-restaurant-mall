@@ -1,0 +1,41 @@
+// ***********************
+// Comments section styles
+// ***********************
+
+.comments-container {
+  display: grid;
+  grid-template-columns: 1fr 11.5%;
+  grid-template-rows: repeat(2, auto);
+  padding: $spacingM 0px 0px $spacingL;
+
+  h5 {
+    margin-bottom: $spacingS;
+    color: $white;
+  }
+}
+
+.comments {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.comment {
+  display: grid;
+  grid-template-columns: 80px auto;
+  grid-template-rows: 1fr;
+  column-gap: $gapM;
+  margin-bottom: $spacingL;
+
+  .content {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: $gapS;
+    color: $white;
+  }
+
+  .image {
+    grid-column: 1 / 2;
+  }
+}

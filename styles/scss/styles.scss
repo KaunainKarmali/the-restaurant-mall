@@ -5,19 +5,28 @@
 @import "./base/general"; // general styles
 
 // General
-@import "./partials/multi-page"; // multiple pages styles
-@import "./partials/nav"; // nav styles
-@import "./partials/header"; // header styles
-@import "./partials/footer"; // footer styles
+@import "./partials/general/multi-page"; // multiple pages styles
+@import "./partials/general/header"; // header styles
+@import "./partials/general/nav"; // nav styles
+@import "./partials/general/footer"; // footer styles
 
 // Home page styles
-@import "./partials/about"; // about styles
-@import "./partials/features"; // features styles
-@import "./partials/winnings"; // winnings styles
-@import "./partials/location"; // location styles
-@import "./partials/spaces"; // spaces styles
-@import "./partials/gallery"; // gallery styles
+@import "./partials/home/home-about"; // about styles
+@import "./partials/home/home-features"; // features styles
+@import "./partials/home/home-winnings"; // winnings styles
+@import "./partials/home/home-location"; // location styles
+@import "./partials/home/home-spaces"; // spaces styles
+@import "./partials/home/home-gallery"; // gallery styles
 
 // Blog page styles
-@import "./partials/blog"; // blog page styles
-@import "./partials/contact"; // blog page styles
+@import "./partials/blog/blog-aside"; // aside styles
+@import "./partials/blog/blog-employment"; // employment section styles
+@import "./partials/blog/blog-comments"; // comments section styles
+
+// Contact page styles
+@import "./partials/contact/contact"; // contact page styles
+
+// Media queries
+@import "./partials/media-queries/media-queries-desktop"; // desktop
+@import "./partials/media-queries/media-queries-tablet"; // tablet
+@import "./partials/media-queries/media-queries-mobile"; // mobile
