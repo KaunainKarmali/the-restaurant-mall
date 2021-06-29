@@ -63,7 +63,7 @@
 
     .left-content,
     .right-image {
-      margin-top: 20px;
+      margin-top: $spacingS;
     }
   }
 }
@@ -82,12 +82,12 @@
   .features-section {
     .left-image,
     .left-content {
-      padding-right: 25px;
+      padding-right: $spacingS;
     }
 
     .right-image,
     .right-content {
-      padding-left: 25px;
+      padding-left: $spacingS;
     }
   }
 }
@@ -113,10 +113,10 @@
   // -----------------------
 
   .about-section {
-    padding: 50px 0px;
+    padding: $spacingM 0px;
 
     .card {
-      margin-bottom: 20px;
+      margin-bottom: $spacingS;
     }
 
     .title {
@@ -198,7 +198,7 @@
     .grid {
       grid-template-rows: repeat(2, auto);
       justify-items: center;
-      row-gap: 30px;
+      row-gap: $gapL;
     }
 
     .image {
@@ -269,11 +269,11 @@
   // -----------------------
 
   h5 {
-    line-height: 30px;
+    line-height: $lineHeightS;
   }
 
   button {
-    line-height: 30px;
+    line-height: $lineHeightS;
     font-size: 1rem;
   }
 
@@ -282,12 +282,12 @@
   // -----------------------
 
   .about-section {
-    padding: 0;
+    padding: 0px;
   }
 
   .card {
     grid-column: 2 / -2;
-    margin-bottom: 20px;
+    margin-bottom: $spacingS;
   }
   .card1 {
     grid-row: 1 / span 3;
@@ -314,7 +314,7 @@
     .grid {
       grid-template-rows: repeat(4, auto);
       justify-items: center;
-      row-gap: 30px;
+      row-gap: $gapL;
     }
 
     .left-image,
@@ -322,8 +322,8 @@
     .left-content,
     .right-content {
       grid-column: 2 / -2;
-      padding: 0;
-      margin: 0;
+      padding: 0px;
+      margin: 0px;
     }
 
     .left-image {
@@ -381,7 +381,7 @@
   // -----------------------
 
   .gallery-container {
-    column-gap: 10px;
+    column-gap: $gapS;
   }
 }
 
@@ -403,14 +403,14 @@
     column-gap: 5px;
 
     a {
-      padding: 10px;
+      padding: $spacingXXS;
       font-size: 1rem;
     }
 
     a::after {
       width: calc(100% - 20px);
-      right: 10px;
-      bottom: 10px;
+      right: $spacingXXS;
+      bottom: $spacingXXS;
     }
   }
 
@@ -430,7 +430,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     place-items: center center;
-    row-gap: 20px;
+    row-gap: $gapM;
   }
 }
 
@@ -517,8 +517,8 @@
 
   .about-section {
     .icon {
-      width: 20px;
-      height: 20px;
+      width: $spacingS;
+      height: $spacingS;
       font-size: 1rem;
     }
   }

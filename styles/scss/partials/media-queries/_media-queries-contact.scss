@@ -3,10 +3,13 @@
 // ***********************
 
 @media (max-width: 800px) {
+  // -----------------------
+  // Contact main styles
+  // -----------------------
   .contact-grid-mobile {
     grid-template-columns: 5% auto 5%;
     grid-template-rows: repeat(2, auto);
-    row-gap: 50px;
+    row-gap: $gapXXL;
   }
 
   .contact-main {
@@ -18,6 +21,10 @@
     }
   }
 
+  // -----------------------
+  // Contact aside styles
+  // -----------------------
+
   .contact-aside {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -25,21 +32,33 @@
 }
 
 @media (max-width: 500px) {
+  // -----------------------
+  // Contact header styles
+  // -----------------------
+
   .contact-title {
     h2 {
       font-size: 2rem;
     }
   }
 
+  // -----------------------
+  // Contact main styles
+  // -----------------------
+
   .contact-main {
     .form-container {
-      padding: 15px;
+      padding: $spacingXS;
     }
 
     .right-bottom-shadow {
       box-shadow: none;
     }
   }
+
+  // -----------------------
+  // Contact aside styles
+  // -----------------------
 
   .contact-aside {
     text-align: center;
@@ -49,7 +68,7 @@
     }
 
     .social-icon {
-      padding: 0px 10px;
+      padding: 0px $spacingXXS;
     }
   }
 }
