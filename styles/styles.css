@@ -428,6 +428,22 @@ button:hover, button:focus {
   background-color: #2b331b;
 }
 
+.skip-link {
+  position: absolute;
+  left: -100%;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  background: #2b331b;
+  color: #ffd300;
+  padding: 15px;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 .pine-bg {
   background-color: #2b331b;
 }
@@ -550,19 +566,19 @@ button:hover, button:focus {
   border: none;
 }
 .input-areas::-webkit-input-placeholder {
-  opacity: 0.75;
+  opacity: 1;
 }
 .input-areas::-moz-placeholder {
-  opacity: 0.75;
+  opacity: 1;
 }
 .input-areas:-ms-input-placeholder {
-  opacity: 0.75;
+  opacity: 1;
 }
 .input-areas::-ms-input-placeholder {
-  opacity: 0.75;
+  opacity: 1;
 }
 .input-areas::placeholder {
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .input-textarea {

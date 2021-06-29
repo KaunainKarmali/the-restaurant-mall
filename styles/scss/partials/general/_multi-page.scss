@@ -6,6 +6,22 @@
 // General styles
 // ----------------------
 
+.skip-link {
+  position: absolute;
+  left: -100%;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  background: $pine;
+  color: $yellow;
+  padding: $spacingXS;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 .pine-bg {
   background-color: $pine;
 }
@@ -14,13 +30,11 @@
   color: $white;
   background-color: $black;
   border-color: $black;
-  // padding: 0px $standard;
 
   &:hover,
   &:focus {
     color: $black;
     background-color: $white;
-    // border-color: $black;
   }
 }
 
@@ -136,9 +150,6 @@
 }
 
 .input-areas {
-}
-
-.input-areas {
   padding: $spacingS;
   width: 100%;
   color: $white;
@@ -146,7 +157,7 @@
   border: none;
 
   &::placeholder {
-    opacity: 0.75;
+    opacity: 1;
   }
 }
 
