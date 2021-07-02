@@ -459,7 +459,7 @@ button:hover, button:focus {
 }
 
 .title-container {
-  grid-column: 2/span 12;
+  grid-column: 2/-1;
   grid-row: 3/span 5;
 }
 
@@ -1682,5 +1682,9 @@ footer {
     width: 20px;
     height: 20px;
     font-size: 1rem;
+  }
+
+  .blog-main-content h4 {
+    font-size: 0.9rem;
   }
 }
