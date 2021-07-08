@@ -14,7 +14,8 @@
     font-size: 1rem;
   }
 
-  button {
+  button,
+  .read-more {
     line-height: 35px;
   }
 
@@ -300,7 +301,9 @@
       text-align: center;
     }
 
-    button {
+    button,
+    .read-more,
+    .read-more-alt {
       width: 100%;
     }
 
@@ -380,7 +383,8 @@
     line-height: $lineHeightS;
   }
 
-  button {
+  button,
+  .read-more {
     line-height: $lineHeightS;
     font-size: 1rem;
   }
@@ -455,7 +459,9 @@
       box-shadow: none;
     }
 
-    button {
+    button,
+    .read-more,
+    .read-more-alt {
       width: 100%;
     }
   }
@@ -470,7 +476,9 @@
     }
 
     p,
-    button {
+    button,
+    .read-more,
+    .read-more-alt {
       text-align: center;
       width: 90%;
     }

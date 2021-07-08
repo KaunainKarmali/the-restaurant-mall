@@ -26,18 +26,6 @@
   background-color: $pine;
 }
 
-.alt-button {
-  color: $white;
-  background-color: $black;
-  border-color: $black;
-
-  &:hover,
-  &:focus {
-    color: $black;
-    background-color: $white;
-  }
-}
-
 // -----------------------
 // Multi page styles
 // -----------------------
@@ -51,6 +39,28 @@
   font-weight: $weightBold;
   color: $yellow;
   margin: 0;
+}
+
+.read-more,
+.read-more-alt {
+  text-transform: uppercase;
+  font-family: $fontStandard;
+  display: inline-block;
+  position: static;
+  font-weight: 400;
+}
+
+.alt-button,
+.read-more-alt {
+  color: $white;
+  background-color: $black;
+  border-color: $black;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    background-color: $white;
+  }
 }
 
 // ----------------------
