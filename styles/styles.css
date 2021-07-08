@@ -412,7 +412,9 @@ a:hover, a:focus {
   color: #ffd300;
 }
 
-button {
+button,
+.read-more,
+.read-more-alt {
   font-size: calc((22.4 / 16) * 1rem);
   line-height: 41.6px;
   text-align: center;
@@ -421,8 +423,13 @@ button {
   border: 2px solid #ffd300;
   border-radius: 2px;
   padding: 0px 10px;
+  font-family: "Josefin Sans", sans-serif;
 }
-button:hover, button:focus {
+button:hover, button:focus,
+.read-more:hover,
+.read-more:focus,
+.read-more-alt:hover,
+.read-more-alt:focus {
   cursor: pointer;
   color: #ffd300;
   background-color: #2b331b;
@@ -448,16 +455,6 @@ button:hover, button:focus {
   background-color: #2b331b;
 }
 
-.alt-button {
-  color: white;
-  background-color: #0f0f0f;
-  border-color: #0f0f0f;
-}
-.alt-button:hover, .alt-button:focus {
-  color: #0f0f0f;
-  background-color: white;
-}
-
 .title-container {
   grid-column: 2/-1;
   grid-row: 3/span 5;
@@ -467,6 +464,28 @@ button:hover, button:focus {
   font-weight: 700;
   color: #ffd300;
   margin: 0;
+}
+
+.read-more,
+.read-more-alt {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  display: inline-block;
+  position: static;
+  font-weight: 400;
+}
+
+.alt-button,
+.read-more-alt {
+  color: white;
+  background-color: #0f0f0f;
+  border-color: #0f0f0f;
+}
+.alt-button:hover, .alt-button:focus,
+.read-more-alt:hover,
+.read-more-alt:focus {
+  color: #0f0f0f;
+  background-color: white;
 }
 
 .container {
@@ -598,8 +617,19 @@ button:hover, button:focus {
   height: auto;
 }
 
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 h1 .title-style {
-  display: inline-block;
   background: white;
   color: #2b331b;
 }
@@ -1107,7 +1137,8 @@ footer {
     font-size: 1.7rem;
   }
 
-  button {
+  button,
+.read-more {
     font-size: 1.2rem;
   }
 
@@ -1161,7 +1192,8 @@ footer {
     font-size: 1rem;
   }
 
-  button {
+  button,
+.read-more {
     line-height: 35px;
   }
 
@@ -1364,7 +1396,9 @@ footer {
   .spaces-section h3 {
     text-align: center;
   }
-  .spaces-section button {
+  .spaces-section button,
+.spaces-section .read-more,
+.spaces-section .read-more-alt {
     width: 100%;
   }
   .spaces-section .left-bottom-shadow {
@@ -1419,7 +1453,8 @@ footer {
     line-height: 29px;
   }
 
-  button {
+  button,
+.read-more {
     line-height: 29px;
     font-size: 1rem;
   }
@@ -1482,7 +1517,9 @@ footer {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .features-section button {
+  .features-section button,
+.features-section .read-more,
+.features-section .read-more-alt {
     width: 100%;
   }
 
@@ -1490,7 +1527,9 @@ footer {
     font-size: 2rem;
   }
   .winning-section p,
-.winning-section button {
+.winning-section button,
+.winning-section .read-more,
+.winning-section .read-more-alt {
     text-align: center;
     width: 90%;
   }

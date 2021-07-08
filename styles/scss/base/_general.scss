@@ -129,7 +129,9 @@ a {
   }
 }
 
-button {
+button,
+.read-more,
+.read-more-alt {
   font-size: $fontSizeS;
   line-height: $lineHeightM;
   text-align: center;
@@ -138,6 +140,7 @@ button {
   border: 2px solid $yellow;
   border-radius: 2px;
   padding: 0px $spacingXXS;
+  font-family: $fontStandard;
 
   &:hover,
   &:focus {
