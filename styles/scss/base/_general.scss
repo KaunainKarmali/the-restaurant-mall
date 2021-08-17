@@ -129,7 +129,9 @@ a {
   }
 }
 
-button {
+button,
+.read-more,
+.read-more-alt {
   font-size: $fontSizeS;
   line-height: $lineHeightM;
   text-align: center;
@@ -139,6 +141,7 @@ button {
   border-radius: 2px;
   padding: 0px $spacingXXS;
   transition: all 0.3s ease-in;
+  font-family: $fontStandard;
 
   &:hover,
   &:focus {
