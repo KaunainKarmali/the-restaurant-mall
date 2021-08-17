@@ -20,6 +20,88 @@
   }
 
   // -----------------------
+  // Nav styles
+  // -----------------------
+
+  .move-left {
+    margin-right: -100%;
+  }
+
+  .nav-menu-open {
+    display: block;
+    position: fixed;
+    z-index: 900 !important;
+    right: 10px;
+    top: 10px;
+  }
+
+  .dim-bg {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nav-links {
+    width: 40%;
+    max-width: 300px;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 50px);
+    justify-items: start;
+    text-align: left;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background: $blackAlt;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-links {
+    li {
+      width: 100%;
+    }
+
+    a {
+      padding: 10px 20px;
+      width: 100%;
+      color: $white;
+    }
+
+    & .nav-link:not(:first-child):hover,
+    & .nav-link:not(:first-child):focus-within {
+      background-color: $black;
+    }
+  }
+
+  .nav-close-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-menu-close {
+    margin-right: $spacingXXXS;
+  }
+
+  .nav-links .active {
+    background: $yellow;
+    color: $blackAlt;
+  }
+
+  // -----------------------
+  // Home | Header
+  // -----------------------
+
+  .home-image-alt {
+    display: none;
+  }
+
+  // -----------------------
   // Home | About section styles
   // -----------------------
 
@@ -67,6 +149,7 @@
     place-items: center center;
     background-color: $blackAlt;
     padding: $spacingXXS;
+    position: static;
 
     &::after {
       display: none;
@@ -113,6 +196,7 @@
     height: auto;
     padding: 0px;
     text-align: center;
+    position: static;
 
     .left-bottom-shadow {
       box-shadow: none;
@@ -157,21 +241,6 @@
   }
 
   // -----------------------
-  // Nav styles
-  // -----------------------
-  .nav-container {
-    grid-row: 1 / 3;
-  }
-
-  // -----------------------
-  // Home | Header styles
-  // -----------------------
-
-  .home-image-alt {
-    display: none;
-  }
-
-  // -----------------------
   // Home | About section styles
   // -----------------------
   .icon-container {
@@ -195,6 +264,15 @@
     p {
       width: 85%;
     }
+  }
+
+  // -----------------------
+  // Contact | Main section styles
+  // -----------------------
+
+  .form-position {
+    position: static;
+    margin-top: 0px;
   }
 }
 
@@ -246,10 +324,6 @@
   .contact-main {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-
-    .form-position {
-      position: static;
-    }
   }
 
   // -----------------------
@@ -523,19 +597,8 @@
   // -----------------------
 
   .nav-links {
-    justify-content: stretch;
-    justify-items: center;
-    column-gap: 5px;
-
     a {
-      padding: $spacingXXS;
       font-size: 1rem;
-    }
-
-    a::after {
-      width: calc(100% - 20px);
-      right: $spacingXXS;
-      bottom: $spacingXXS;
     }
   }
 

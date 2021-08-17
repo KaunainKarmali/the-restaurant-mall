@@ -140,6 +140,7 @@ button,
   border: 2px solid $yellow;
   border-radius: 2px;
   padding: 0px $spacingXXS;
+  transition: all 0.3s ease-in;
   font-family: $fontStandard;
 
   &:hover,

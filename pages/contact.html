@@ -30,7 +30,26 @@
             <!-- START: Nav-container -->
             <div class="nav-container">
               <nav>
-                <ul class="nav-links">
+                <!-- START: Nav-toggle-button -->
+                <button
+                  id="nav-menu-open"
+                  class="nav-menu-open"
+                  aria-label="Open the menu"
+                >
+                  <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <!-- END: Nav-toggle-button -->
+
+                <ul class="nav-links move-left">
+                  <li class="nav-link nav-close-link">
+                    <button
+                      id="nav-menu-close"
+                      class="nav-menu-close"
+                      aria-label="Close the menu"
+                    >
+                      <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                  </li>
                   <li class="nav-link"><a href="../index.html">Home</a></li>
                   <li class="nav-link">
                     <a href="../index.html#about">About</a>
@@ -164,8 +183,9 @@
       <!-- END: Outer grid -->
     </div>
     <!-- END: Full bleed grid -->
+    <footer>
+      <p>Copyright &copy; 2021 Juno College</p>
+    </footer>
+    <script src="../script.js"></script>
   </body>
-  <footer>
-    <p>Copyright &copy; 2021 Juno College</p>
-  </footer>
 </html>
